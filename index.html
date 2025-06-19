@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>智能计算与认知实验室 - 清华大学</title>
+    <title>光纤传感与智能感知实验室 - 鲁东大学</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="./statics/favicon.ico" type="image/x-icon" />
     <style>
         * {
             margin: 0;
@@ -302,7 +303,7 @@
             box-shadow: var(--card-shadow);
             transition: transform 0.3s;
             position: relative;
-            height: 300px;
+            height: 400px;
         }
         
         .research-card:hover {
@@ -339,7 +340,7 @@
         .research-content p {
             color: var(--gray);
             font-size: 1rem;
-            line-height: 1.6;
+            line-height: 1.7;
         }
         
         /* Team Section */
@@ -364,7 +365,7 @@
         }
         
         .member-image {
-            height: 280px;
+            height: 400px;
             overflow: hidden;
             position: relative;
         }
@@ -373,6 +374,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center top;
             transition: transform 0.5s;
         }
         
@@ -530,16 +532,18 @@
         
         .map-container {
             flex: 1;
-            height: 450px;
+            height: 500px;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: var(--card-shadow);
+            position: relative;
         }
         
-        .map-container iframe {
+        .map-container img {
             width: 100%;
             height: 100%;
             border: none;
+            object-fit: cover;
+            transition: transform 0.5s;
         }
         
         /* Footer */
@@ -722,8 +726,9 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <i class="fas fa-brain"></i>
-                <span>清华大学智能计算与认知实验室</span>
+                <!-- <i class="fas fa-brain"></i> -->
+                 <img src="./statics/logo_1.png" style="margin-right: 20px;"/>
+                <span>光纤传感与智能感知实验室</span>
             </div>
             <nav>
                 <ul>
@@ -746,8 +751,8 @@
             <div class="circle"></div>
         </div>
         <div class="hero-content">
-            <h1>探索<span>人工智能</span>前沿<br>推动智能科学边界</h1>
-            <p>清华大学智能计算与认知实验室致力于人工智能基础理论与应用研究</p>
+            <h1>探索<span>光纤传感与智能感知</span>前沿<br>推动智能科学边界</h1>
+            <p>鲁东大学光纤传感与智能感知实验室致力于人工智能基础理论与应用研究</p>
             <a href="#contact" class="btn">加入研究团队</a>
         </div>
     </section>
@@ -757,29 +762,29 @@
         <div class="container">
             <div class="section-header">
                 <h2>关于实验室</h2>
-                <p>成立于2010年，专注于人工智能基础理论与前沿应用研究</p>
+                <p>成立于2024年，专注于人工智能基础理论与前沿应用研究</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
                     <h3>智能科学的探索者</h3>
-                    <p>清华大学智能计算与认知实验室(ICCL)是人工智能领域的领先研究机构。实验室聚焦于机器学习、自然语言处理、计算机视觉和认知计算等前沿方向，致力于推动人工智能基础理论的发展与创新应用。</p>
-                    <p>实验室拥有20余名教授、研究员和博士后，以及80余名博士和硕士研究生。我们与MIT、Stanford、CMU等国际顶尖研究机构保持紧密合作关系，共同推进人工智能科学的发展。</p>
+                    <p>鲁东大学光纤传感与智能感知实验室聚焦于分布式光纤传感技术、集成传感器技术、计算机视觉和深度学习算法等前沿方向，致力于推动光纤传感与智能感知的发展与创新应用。</p>
+                    <p>实验室探索光纤传感与海洋信息监测、道路交通实时监测、语音识别、现代工业生产等多个领域相结合，推进光纤传感与智能感知的在多种领域的应用。</p>
                     
                     <div class="stats-grid">
                         <div class="stat-card">
                             <i class="fas fa-graduation-cap"></i>
-                            <h4>25+</h4>
+                            <h4>10+</h4>
                             <p>核心研究人员</p>
                         </div>
                         <div class="stat-card">
                             <i class="fas fa-file-alt"></i>
-                            <h4>180+</h4>
-                            <p>顶级期刊论文</p>
+                            <h4>30+</h4>
+                            <p>论文</p>
                         </div>
                         <div class="stat-card">
                             <i class="fas fa-trophy"></i>
                             <h4>15+</h4>
-                            <p>国际奖项</p>
+                            <p>项目</p>
                         </div>
                     </div>
                 </div>
@@ -800,29 +805,29 @@
             <div class="research-grid">
                 <div class="research-card">
                     <div class="research-image">
-                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1465&q=80" alt="机器学习">
+                        <img src="./statics/images/research_1_yy.png" alt="机器学习">
                     </div>
                     <div class="research-content">
-                        <h3>机器学习基础理论</h3>
-                        <p>研究深度学习、强化学习、元学习等前沿算法，探索可解释AI与鲁棒机器学习方法。</p>
+                        <h3>光纤传感与语音识别结合</h3>
+                        <p>使用深度学习模型实现对语音信号的精准识别与语义理解，拓展语音识别技术在智能家居、智能交通、医疗等多个领域的应用。</p>
                     </div>
                 </div>
                 <div class="research-card">
                     <div class="research-image">
-                        <img src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="自然语言处理">
+                        <img src="./statics/images/research_2_cl.png" alt="道路交通状况实时监测">
                     </div>
                     <div class="research-content">
-                        <h3>自然语言处理</h3>
-                        <p>大语言模型、文本生成、机器翻译、知识图谱与语义理解等方向的研究与应用。</p>
+                        <h3>道路交通状况实时监测</h3>
+                        <p>利用人工智能和分布式光纤传感技术，对道路交通状况进行实时监测，通过集成传感器技术、计算机视觉和机器学习等手段，实现对交通流量、车辆状态等的实时监测。</p>
                     </div>
                 </div>
                 <div class="research-card">
                     <div class="research-image">
-                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1478&q=80" alt="计算机视觉">
+                        <img src="./statics/images/research_3_rq.png" alt="计算机视觉">
                     </div>
                     <div class="research-content">
-                        <h3>计算机视觉</h3>
-                        <p>三维视觉、图像理解、视频分析、医学影像处理等视觉智能理论与应用研究。</p>
+                        <h3>分布式光纤传感系统</h3>
+                        <p>基于分布式光纤传感系统，将感知算法引入光传感应用场景，使用深度学习模型快速识别入侵事件，实现对第三方破坏、地质灾害等事件的分类识别。</p>
                     </div>
                 </div>
             </div>
@@ -839,63 +844,49 @@
             <div class="team-grid">
                 <div class="team-member">
                     <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80" alt="张教授">
+                        <img src="./statics/images/member_1_wll.png" alt="王教授">
                     </div>
                     <div class="member-info">
-                        <h3>张明远 教授</h3>
-                        <p class="position">实验室主任</p>
-                        <p class="interest">机器学习 · 可解释AI</p>
+                        <h3>王丽丽 教授</h3>
+                        <p class="position">实验室负责人</p>
+                        <p class="interest">光纤通信网络 · 光纤光栅应变传感理论</p>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-google"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <!-- <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a> -->
+                            <a href="mailto:wanglili@ldu.edu.cn"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="team-member">
                     <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1627163439134-7a8c47e08208?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80" alt="李教授">
+                        <img src="./statics/images/member_2_syz.png" alt="赛博士">
                     </div>
                     <div class="member-info">
-                        <h3>李思颖 教授</h3>
-                        <p class="position">首席研究员</p>
-                        <p class="interest">自然语言处理 · 知识图谱</p>
+                        <h3>赛耀樟 博士</h3>
+                        <p class="position">实验室成员</p>
+                        <p class="interest">光纤检测技术 · 图像识别</p>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-google"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <!-- <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a> -->
+                            <a href="mailto:wanglili@ldu.edu.cn"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="team-member">
                     <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1629425733761-caae3b5f2e50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="王博士">
+                        <img src="./statics/images/member_3_syq.png" alt="宋博士">
                     </div>
                     <div class="member-info">
-                        <h3>王浩然 博士</h3>
-                        <p class="position">高级研究员</p>
-                        <p class="interest">计算机视觉 · 三维重建</p>
+                        <h3>宋永强 博士</h3>
+                        <p class="position">实验室成员</p>
+                        <p class="interest">信号处理 · 深度学习</p>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-google"></i></a>
+                            <!-- <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a> -->
                             <a href="#"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="陈博士">
-                    </div>
-                    <div class="member-info">
-                        <h3>陈晓薇 博士</h3>
-                        <p class="position">研究员</p>
-                        <p class="interest">强化学习 · 机器人学习</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-google"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -914,9 +905,9 @@
                         <i class="fas fa-file-alt"></i>
                     </div>
                     <div class="pub-content">
-                        <h3>基于元学习的少样本图像分类方法</h3>
-                        <div class="pub-meta">NeurIPS 2023 · 张明远等</div>
-                        <p>提出了一种新型元学习框架，显著提高了小样本学习场景下的图像分类准确率，在多个基准数据集上达到SOTA性能。</p>
+                        <h3>Crack width estimate in reinforced concrete with FBG sensor:experimental and numerical analysis</h3>
+                        <div class="pub-meta">Optoelectronics Letters 2022 · 王丽丽等</div>
+                        <p>设计了一种基于光纤布拉格光栅传感器的实验与数值分析对钢筋混凝土中裂缝宽度的估算的方法。</p>
                     </div>
                 </div>
                 <div class="pub-item">
@@ -924,9 +915,9 @@
                         <i class="fas fa-file-alt"></i>
                     </div>
                     <div class="pub-content">
-                        <h3>多语言预训练模型的知识迁移研究</h3>
-                        <div class="pub-meta">ACL 2023 · 李思颖等</div>
-                        <p>探索了跨语言预训练模型的知识迁移机制，提出了一种高效的多语言表示学习方法，显著提升低资源语言理解能力。</p>
+                        <h3>基于增强视觉Transformer的哈希食品图像检索</h3>
+                        <div class="pub-meta">食品科学 2024 · 王丽丽等</div>
+                        <p>设计了基于增强视觉Transformer的哈希食品图像检索的方法。</p>
                     </div>
                 </div>
                 <div class="pub-item">
@@ -934,9 +925,9 @@
                         <i class="fas fa-file-alt"></i>
                     </div>
                     <div class="pub-content">
-                        <h3>自监督三维点云表示学习框架</h3>
-                        <div class="pub-meta">CVPR 2023 · 王浩然等</div>
-                        <p>设计了一种创新的自监督学习框架，用于三维点云数据的表示学习，在多个下游任务中取得突破性成果。</p>
+                        <h3>Impact Localization of CFRP Structure Based on FBG Sensor Network</h3>
+                        <div class="pub-meta">Photonic Sensors 2020 · 赛耀樟等</div>
+                        <p>设计了基于光纤布拉格光栅传感器网络的碳纤维增强复合材料结构冲击定位的方法。</p>
                     </div>
                 </div>
             </div>
@@ -958,21 +949,21 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h4>地址</h4>
-                                <p>北京市海淀区清华大学信息科学技术大楼1508室</p>
+                                <p>山东省烟台市芝罘区鲁东大学</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
                             <div>
                                 <h4>电话</h4>
-                                <p>+86 10 6278 1234</p>
+                                <p>15253166159</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>邮箱</h4>
-                                <p>iccl@tsinghua.edu.cn</p>
+                                <p>714259029@qq.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -983,10 +974,10 @@
                             </div>
                         </div>
                     </div>
-                    <p>我们欢迎访问学者、博士后研究人员以及研究生加入我们的团队。请将您的简历和研究兴趣发送至我们的邮箱。</p>
+                    <p>如果您对我们的实验室研究方向感兴趣，或者有任何问题、合作意向，欢迎随时通过上述方式与我们联系。</p>
                 </div>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6120.314223176996!2d116.33301577622487!3d39.99055310000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f05296f6dd9b9f%3A0x7d5eef3a5c0d6b5e!2sTsinghua%20University!5e0!3m2!1sen!2sus!4v1686855114993!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                <div class="map-container" id="map1">
+                    <!-- <img src="./map.png" alt="地图"> -->
                 </div>
             </div>
         </div>
@@ -997,8 +988,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>智能计算与认知实验室</h3>
-                    <p>清华大学信息科学技术学院</p>
+                    <h3>光纤传感与智能感知实验室</h3>
+                    <p>鲁东大学计算机与人工智能学院</p>
                     <p>致力于人工智能基础理论与前沿应用研究</p>
                 </div>
                 <div class="footer-column">
@@ -1023,7 +1014,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 清华大学智能计算与认知实验室. 保留所有权利</p>
+                <p>&copy; 2025 鲁东大学光纤传感与智能感知实验室. 保留所有权利</p>
             </div>
         </div>
     </footer>
@@ -1051,6 +1042,24 @@
         circles.forEach((circle, index) => {
             circle.style.animationDelay = `${index * 2}s`;
         });
+        window.onload = function() {
+            var map = new BMap.Map('map1');
+            var point = new BMap.Point(121.360986,37.526568); // 鲁东大学的坐标
+            map.centerAndZoom(point, 15);
+            map.addControl(new BMap.MapTypeControl());
+            map.enableScrollWheelZoom(true);
+            var marker = new BMap.Marker(point);
+            map.addOverlay(marker);
+            var infoWindow = new BMap.InfoWindow("鲁东大学光纤传感与智能感知实验室", {
+                title: "实验室位置"
+            });
+            marker.addEventListener("click", function() {
+                map.openInfoWindow(infoWindow, point);
+            });
+            marker.openInfoWindow(infoWindow);
+        };
     </script>
+    <script src="http://api.map.baidu.com/api?v=1.4"></script>
+
 </body>
 </html>
