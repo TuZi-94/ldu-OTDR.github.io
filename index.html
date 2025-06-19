@@ -6,6 +6,8 @@
     <title>光纤传感与智能感知实验室 - 鲁东大学</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="./statics/favicon.ico" type="image/x-icon" />
+          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
         * {
             margin: 0;
@@ -1044,23 +1046,19 @@
         });
 
         window.onload = function() {
-            var map = new BMap.Map('map1');
-            var point = new BMap.Point(121.360986,37.526568); // 鲁东大学的坐标
-            map.centerAndZoom(point, 15);
-            map.addControl(new BMap.MapTypeControl());
-            map.enableScrollWheelZoom(true);
-            var marker = new BMap.Marker(point);
-            map.addOverlay(marker);
-            var infoWindow = new BMap.InfoWindow("鲁东大学光纤传感与智能感知实验室", {
-                title: "实验室位置"
-            });
-            marker.addEventListener("click", function() {
-                map.openInfoWindow(infoWindow, point);
-            });
-            marker.openInfoWindow(infoWindow);
+            // 创建地图实例
+            var map = L.map('map1').setView([37.520102, 121.348885], 15); // 鲁东大学的坐标
+            // 添加OpenStreetMap图层
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            // 添加标记
+            var marker = L.marker([37.520102, 121.348885]).addTo(map);
+            // 添加弹出信息
+            marker.bindPopup("<b>鲁东大学光纤传感与智能感知实验室</b><br>实验室位置").openPopup();
         };
     </script>
-    <script src="./statics/js/baidumap14.js"></script>
+
 
 </body>
 </html>
